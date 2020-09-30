@@ -1,0 +1,16 @@
+frase=["Mi","frase","ordenada"] 
+frase_desorden= []
+frase_orden = []
+archivo = open("frase.txt","r")
+for i in archivo.readlines():
+   frase_desorden.append(i)
+print("           O R D E N A R  O R A C I O N E S")
+print("==========Frase ingresada en el archivo .txt ============")
+print(frase_desorden)
+print("__________________________________________________________")
+for a in frase:
+    for a1 in frase_desorden:
+        if a in a1:
+            frase_orden.append(a)
+print("====================Frase ordenada====================")
+print(frase_orden)
